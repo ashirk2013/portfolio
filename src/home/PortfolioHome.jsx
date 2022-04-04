@@ -13,11 +13,11 @@ import Helmet from "../component/common/Helmet";
 const SlideList = [
   {
     textPosition: "text-left",
-    category: "Freelance digital designer",
-    title: "Hello, I’m <span>Nancy</span> Welcome to my World.",
-    description: "",
-    buttonText: "",
-    buttonLink: "",
+    title: "Data Scientist | Software Developer",
+    greeting: "Hello, I’m <span>Aaron</span> Welcome to my site.",
+    description: "My Portfolio",
+    buttonText: "submit",
+    buttonLink: "buttonLink",
   },
 ];
 class PersonalPortfolio extends Component {
@@ -43,11 +43,11 @@ class PersonalPortfolio extends Component {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className={`inner ${value.textPosition}`}>
-                      {value.category ? <span>{value.category}</span> : ""}
-                      {value.title ? (
+                      {value.title ? <span>{value.title}</span> : ""}
+                      {value.greeting ? (
                         <h1
                           className="title"
-                          dangerouslySetInnerHTML={{ __html: value.title }}
+                          dangerouslySetInnerHTML={{ __html: value.greeting }}
                         ></h1>
                       ) : (
                         ""
